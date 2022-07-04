@@ -2,6 +2,7 @@
     "name": "favorite-hotkeys",
     "displayName": "Favorite hotkeys",
     "description": "My favorite hotkeys",
+    "publisher": "deitry",
     "version": "0.0.1",
     "repository": {
         "type": "git",
