@@ -1,13 +1,18 @@
-# README
-## This is the README for your extension "favorite-hotkeys"
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+# My Favorite Hotkeys
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
+Hotkeys are intended to support quick jumping over big chunks of code.
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+There is many ways how you can jump between lines.
+- `F3` / `Shift` + `F3` - is swiss knife in many situations, see "Context-dependency" section
+- `Ctrl` + `[` / `Ctrl` + `]` - jumps between occurences of text under cursor
+- `Ctrl` + `Shift` + `[` / `Ctrl` + `Shift` + `]` - similar to previous, but adds occurence to current selection. It uses multi-cursors and allows to quickly manage copy-pasted code
+- `Alt` + `;` / `Alt` + `'` - jumps between found problems in file
+- `Ctrl` + `;` / `Ctrl` + `'` - demands `alefragnani.bookmarks` extension and allows to jump between bookmarks in the same file
+- And always remember default `F1` key which is the quickest way to get into command palette, which is also a file finder!
 
-**Enjoy!**
+## Context-dependency
+
+Same `F3`/`Shift` + `F3` behaves differently in diffirent cases.
+- If in diff or in simple editor and have no selection or search widget, they jump between changes
+- If there is selection, they jump between occurences of selected text
+- If there is search widget, they jump between searched string
