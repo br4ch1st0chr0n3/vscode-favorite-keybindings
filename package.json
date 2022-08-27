@@ -6,7 +6,7 @@
     "version": "0.0.1",
     "repository": {
         "type": "git",
-        "url": "https://github.com/br4ch1st0chr0n3/vscode-favorite-keybindings"
+        "url": "https://github.com/br4ch1st0chr0n3/vscode-purs-keybindings"
     },
     "engines": {
         "vscode": "^1.68.0"
