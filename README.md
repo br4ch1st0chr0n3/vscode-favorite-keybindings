@@ -4,7 +4,7 @@
     * cursor inside `hey` -> `(hey :: ?_)`
     * selected `make good` -> `(make good :: ?_)`
 
-* Remove the type hole: `Ctrl` + `Alt` + `X`
+* Remove the typed hole: `Ctrl` + `Alt` + `X`
 
 ## Dependencies
 
