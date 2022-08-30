@@ -3,7 +3,7 @@
     "displayName": "PureScript typed hole keybindings",
     "description": "Insert or remove typed holes via keybindings",
     "publisher": "br4ch1st0chr0n3",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "repository": {
         "type": "git",
         "url": "https://github.com/br4ch1st0chr0n3/vscode-purs-keybindings"
@@ -70,7 +70,7 @@
                 "args": {
                     "sequence": [
                         {
-                            "command": "extension.selectParenthesisOuter"
+                            "command": "bracket-select.select-include"
                         },
                         {
                             "command": "editor.action.insertSnippet",
@@ -85,6 +85,6 @@
     },
     "extensionDependencies": [
         "ryuta46.multi-command",
-        "dbankier.vscode-quick-select"
+        "chunsen.bracket-select"
     ]
 }
