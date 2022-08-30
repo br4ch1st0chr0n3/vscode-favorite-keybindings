@@ -3,7 +3,7 @@
     "displayName": "PureScript typed hole keybindings",
     "description": "Insert or remove typed holes via keybindings",
     "publisher": "br4ch1st0chr0n3",
-    "version": "0.0.4",
+    "version": "0.0.1",
     "repository": {
         "type": "git",
         "url": "https://github.com/br4ch1st0chr0n3/vscode-purs-keybindings"
@@ -14,6 +14,7 @@
     "categories": [
         "Keymaps"
     ],
+    "icon": "images/avatar.png",
     "contributes": {
         "keybindings": [
             {
