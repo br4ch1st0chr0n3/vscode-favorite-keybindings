@@ -75,7 +75,7 @@
                         {
                             "command": "editor.action.insertSnippet",
                             "args": {
-                                "snippet": "${TM_SELECTED_TEXT/\\(((.|\n)*) :: \\?_\\)/$1/}"
+                                "snippet": "${TM_SELECTED_TEXT/\\((.*) :: \\?_\\)/$1/s}"
                             }
                         }
                     ]
