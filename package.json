@@ -1,5 +1,5 @@
 {
-    "name": "purs-keybingins",
+    "name": "purs-keybindings",
     "displayName": "PureScript typed hole keybindings",
     "description": "Insert or remove typed holes via keybindings",
     "publisher": "br4ch1st0chr0n3",
@@ -21,7 +21,17 @@
                 "when": "editorHasSelection",
                 "command": "extension.multiCommand.execute",
                 "args": {
-                    "command": "multiCommand.addTypeHole"
+                    "sequence": [
+                        {
+                            "command": "editor.action.insertSnippet",
+                            "args": {
+                                "snippet": "(${TM_SELECTED_TEXT} :: ?_)"
+                            }
+                        },
+                        {
+                            "command": "cursorLeft"
+                        }
+                    ]
                 }
             },
             {
@@ -29,7 +39,27 @@
                 "when": "editorTextFocus && !editorHasSelection",
                 "command": "extension.multiCommand.execute",
                 "args": {
-                    "command": "multiCommand.addTypeHoleAutoSelect"
+                    "sequence": [
+                        {
+                            "command": "editor.action.addSelectionToNextFindMatch"
+                        },
+                        {
+                            "command": "extension.multiCommand.execute",
+                            "args": {
+                                "sequence": [
+                                    {
+                                        "command": "editor.action.insertSnippet",
+                                        "args": {
+                                            "snippet": "(${TM_SELECTED_TEXT} :: ?_)"
+                                        }
+                                    },
+                                    {
+                                        "command": "cursorLeft"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
                 }
             },
             {
@@ -37,9 +67,23 @@
                 "when": "editorTextFocus",
                 "command": "extension.multiCommand.execute",
                 "args": {
-                    "command": "multiCommand.removeTypeHole"
+                    "sequence": [
+                        {
+                            "command": "extension.selectParenthesisOuter"
+                        },
+                        {
+                            "command": "editor.action.insertSnippet",
+                            "args": {
+                                "snippet": "${TM_SELECTED_TEXT/\\((.*) :: \\?_\\)/$1/}"
+                            }
+                        }
+                    ]
                 }
             }
         ]
-    }
+    },
+    "extensionDependencies": [
+        "ryuta46.multi-command",
+        "dbankier.vscode-quick-select"
+    ]
 }

@@ -6,7 +6,9 @@
 
 * Remove the typed hole: `Ctrl` + `Alt` + `X`
 
-## Dependencies
+This extension depends on
 
 * [ryuta46.multi-command](https://marketplace.visualstudio.com/items?itemName=ryuta46.multi-command)
 * [dbankier.vscode-quick-select](https://marketplace.visualstudio.com/items?itemName=dbankier.vscode-quick-select)
+
+So, please, don't disable them!

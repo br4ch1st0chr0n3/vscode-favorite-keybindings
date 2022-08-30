@@ -1,0 +1,49 @@
+{
+    // "multiCommand.commands": [
+    //     {
+    //         "title": "select & add typed hole",
+    //         "command": "multiCommand.addTypeHole",
+    //         "sequence": [
+    //             {
+    //                 "command": "editor.action.insertSnippet",
+    //                 "args": {
+    //                     "snippet": "(${TM_SELECTED_TEXT} :: ?_)"
+    //                 }
+    //             },
+    //             {
+    //                 "command": "cursorLeft"
+    //             }
+    //         ]
+    //     },
+    //     {
+    //         "title": "auto select & add typed hole",
+    //         "command": "multiCommand.addTypeHoleAutoSelect",
+    //         "sequence": [
+    //             {
+    //                 "command": "editor.action.addSelectionToNextFindMatch"
+    //             },
+    //             {
+    //                 "command": "extension.multiCommand.execute",
+    //                 "args": {
+    //                     "command": "multiCommand.addTypeHole"
+    //                 }
+    //             }
+    //         ]
+    //     },
+    //     {
+    //         "title": "remove typed hole",
+    //         "command": "multiCommand.removeTypeHole",
+    //         "sequence": [
+    //             {
+    //                 "command": "extension.selectParenthesisOuter"
+    //             },
+    //             {
+    //                 "command": "editor.action.insertSnippet",
+    //                 "args": {
+    //                     "snippet": "${TM_SELECTED_TEXT/\\((.*) :: \\?_\\)/$1/}"
+    //                 }
+    //             }
+    //         ]
+    //     }
+    // ]
+}
