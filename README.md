@@ -1,4 +1,4 @@
-# Purescript keybindings for typed holes
+# PureScript keybindings for typed holes
 
 * Insert a typed hole for a word containing the cursor or a selection: `Ctrl` + `Alt` + `Z`
   * cursor inside `hey` -> `(hey :: ?_)`
