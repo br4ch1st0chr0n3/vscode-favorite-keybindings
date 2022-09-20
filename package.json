@@ -1,9 +1,9 @@
 {
     "name": "purs-keybindings",
-    "displayName": "PureScript typed hole keybindings",
+    "displayName": "PureScript keybindings for typed holes",
     "description": "Insert or remove typed holes via keybindings",
     "publisher": "br4ch1st0chr0n3",
-    "version": "0.0.3",
+    "version": "0.0.5",
     "repository": {
         "type": "git",
         "url": "https://github.com/br4ch1st0chr0n3/vscode-purs-keybindings"

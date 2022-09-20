@@ -1,8 +1,8 @@
-# Purescript typed holes keybindings
+# Purescript keybindings for typed holes
 
-* Add a typed hole for a word containing the cursor or a selection: `Ctrl` + `Alt` + `Z`
-    * cursor inside `hey` -> `(hey :: ?_)`
-    * selected `make good` -> `(make good :: ?_)`
+* Insert a typed hole for a word containing the cursor or a selection: `Ctrl` + `Alt` + `Z`
+  * cursor inside `hey` -> `(hey :: ?_)`
+  * selected `make good` -> `(make good :: ?_)`
 
 * Remove the typed hole: `Ctrl` + `Alt` + `X`
 
